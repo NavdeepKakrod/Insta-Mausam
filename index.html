@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta Mausam</title>
+    <link rel="stylesheet" href="Weather.css">
+    
+</head>
+<body onload="getfunc()">
+    <div class="topbar">
+    <div class="weather-app">Weather App</div>
+    <div class="navbar">
+        <span class="app-name">Insta Mausam<img class="logo1" src="Images/LOGO.webp" alt="logo"/></span>
+        
+        <div class="nav-box1">
+            <select  name="Theme" id="Theme" onchange="THEME(this.value)">
+                <option value="">Select a Theme</option>
+                <option value="Summer" >Quast</option>
+                <option value="Rainy" >Rainy</option>
+                <option value="Aerial"  >Aerial</option>
+                <option value="Winter" >Cold</option>
+            </select>
+        </div>
+        <div class="nav-box2">  
+            <input type="text" onchange="getfunc()" id="Search"  value="Delhi">
+        </div>
+    </div>
+    </div>
+    
+    <div class="wholebox">
+        
+        <div class="box2" id="box">
+            <div>
+            <p class="Temperature"><span id="temp">14 </span><sup>o</sup>Celcius</p>
+            <p class="data">Wind Speed - <span  id="ws">20</span></p>
+            <p class="data">Humidity - <span  id="hmdt">18</span></p>
+            <p class="data">Feels Like - <span  id="feellike">18</span></p>
+            <p class="data">Today's Message - <span  id="chances">10</span></p>
+            </div>
+            <div style="display: flex; justify-content: center;height: 200px;width: 200px;margin-top: 20px;">
+                <img src="Images/wthr_iconbg.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <script src="Weather.js"></script>
+</body>
+</html>
