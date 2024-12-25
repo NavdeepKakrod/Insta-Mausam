@@ -8,6 +8,7 @@ body{
     background-size: cover;
     align-content: center;
 }
+
 .topbar{
     height: 112px;
     width: 100%;
@@ -17,14 +18,22 @@ body{
     color: rgb(221, 163, 77);
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    
     padding-left: 2px;
-    border-radius: 5px;
-    border: 0.5px solid black;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border: 0.5px solid black
 }
 .app-name:hover{
-    border: 2px solid black;
-    border-radius: 5px;
+    border: 2px solid rgb(27, 27, 27);
+    
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
     
 
 }
@@ -57,43 +66,59 @@ body{
     
 }
 .logo1{
-    
-    width: 45px ;
-    height: 40px;
- 
-       
-    border-radius: 4px;
-    
+    width: 43px ;
+    height: 36px;
+    border-radius: 3px; 
     align-items: center;
+}
+.nav-box2{
+    display: flex;
+}
+.logo2{
+    width: 40px ;
+    height: 36px;
+    border: 0.5px solid black;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px; 
+    align-items: center;
+}
+.logo2:hover{
+    border: 2px solid black;
+    border-radius: 4px;
 }
 select{
     margin-left: 10px;
     padding: 5px;
     height: 38px;
+    
+    letter-spacing: 1px;
     width: 200px;
     background-color: white;
     color: rgb(221, 163, 77);
-    
+    border-radius: 4px;
+    border: 0.5px solid black;
 }
 select:hover{
     border: 2px solid black;
-    border-radius: 3px;
-    
-
+    border-radius: 4px;
 }
 input{
-    
+    letter-spacing: 1px;
     border: 0.5px solid black;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px; 
+    border-right: none;
     padding: 4px;
     height: 28px;
-    width: 600px;
+    width: 550px;
     color: rgb(221, 163, 77);
     background-color: white;
 }
 input:hover{
     border: 2px solid black;
-    
+    border-radius: 4px;
 }
+
 .wholebox{
     
     height: 600px;
